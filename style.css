@@ -75,6 +75,10 @@ form ion-icon {
     grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.search-result :hover {
+    background-color: rgb(80, 80, 80);
+}
+
 .item {
     width: 100%;
     padding: 15px;
@@ -107,11 +111,17 @@ form ion-icon {
     text-align: center;
     width: 130px;
     padding: 10px 0;
-    background-color: #404041;
+    background-color: rgb(26, 26, 27);
     color: white;
     font-size: 1.4rem;
     margin-top: 20px;
     align-self: flex-start;
+    border-radius: 4px;
+}
+
+.view-recipe:hover {
+    background-color: red;
+    width: 140px;
 }
 
 .item-data {
