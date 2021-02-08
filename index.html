@@ -12,13 +12,42 @@
     <section>
         <div class="container">
             <h1 class="brand">Recipes App</h1>
-
             <form>
                 <input type="text" placeholder="Search Recipe...">
                 <ion-icon name="search"></ion-icon>
             </form>
+            <div class="buttondiv">
+                <button class="random" onclick="randomRecipe('foodNames')">Find Random Recipe</button>
+            </div>
+            <div class="wrapper">
+                <section id="section1">
+                    <a href="#section2" class="arrow-btn left-arrow">‹</a>
+                    <div class="item">
+                        <img src="./images/vegetable.jpg" alt="Describe Image" onclick="randomRecipe('vegetableNames')">
+                    </div>
+                    <div class="item">
+                        <img src="./images/dairy.jpg" alt="Describe Image" onclick="randomRecipe('dairyNames')">
+                    </div>
+                    <div class="item">
+                        <img src="./images/fruit.jpg" alt="Describe Image" onclick="randomRecipe('fruitNames')">
+                    </div>
+                    <a href="#section2" class="arrow-btn right-arrow">›</a>
+                </section>
+                <section id="section2">
+                    <a href="#section1" class="arrow-btn left-arrow">‹</a>
+                    <div class="item">
+                        <img src="./images/meat.jpg" alt="Describe Image" onclick="randomRecipe('meatNames')">
+                    </div>
+                    <div class="item">
+                        <img src="./images/beverages.jpg" alt="Describe Image" onclick="randomRecipe('beverageNames')">
+                    </div>
+                    <div class="item">
+                        <img src="./images/sauce.jpeg" alt="Describe Image" onclick="randomRecipe('sauceNames')">
+                    </div>
+                    <a href="#section1" class="arrow-btn right-arrow">›</a>
+                </section>
+            </div>
             <div class="search-result">
-
             </div>
         </div>
     </section>
